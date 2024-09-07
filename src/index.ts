@@ -16,13 +16,7 @@ const prepareCanvas = ({ id }: { id: string }) => {
   return canvas.getContext("2d");
 };
 
-const render = ({
-  animation,
-  context,
-}: {
-  animation: CanvasAnimation;
-  context: CanvasRenderingContext2D;
-}) => {
+const render = ({ animation, context }: { animation: CanvasAnimation; context: CanvasRenderingContext2D }) => {
   context.clearRect(0, 0, CONFIG.WIDTH, CONFIG.HEIGHT);
 
   context.lineWidth = 1;
